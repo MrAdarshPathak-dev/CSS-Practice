@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+p{
+    color: blue;
+}
+button{
+    color: white;
+    background-color: black;
+    text-transform: capitalize;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
