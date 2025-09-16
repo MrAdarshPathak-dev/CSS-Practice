@@ -1,0 +1,39 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  margin: 40px;
+}
+/* grid container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.item {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 20px;
+}
+/* responsive (tab) */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+/* responsive (mobile) */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
